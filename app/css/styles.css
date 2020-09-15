@@ -1,5 +1,5 @@
 html {
-  font-size: 16px; }
+  font-size: 37px; }
   @media (min-width: 1281px) {
     html {
       font-size: 15px; } }
@@ -140,6 +140,10 @@ body {
           .l-frame .price_cont .obs ul li:last-child {
             margin-bottom: 0; }
   .l-frame #access .address_cont {
-    align-items: flex-start; }
+    align-items: flex-start;
+    flex-direction: column; }
+    @media (min-width: 1281px) {
+      .l-frame #access .address_cont {
+        flex-direction: row; } }
     .l-frame #access .address_cont .address {
       margin-right: 80px; }

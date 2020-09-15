@@ -1,5 +1,5 @@
 html{
-	font-size: 16px;
+	font-size: 37px;
 	@media (min-width: 1281px) {
 		font-size: 15px;
 	}
@@ -184,6 +184,10 @@ body{
 	#access{
 		.address_cont{
 			align-items: flex-start;
+			flex-direction: column;
+			@media (min-width: 1281px) {
+				flex-direction: row;
+			}
 			.address{
 				margin-right: 80px;
 			}
