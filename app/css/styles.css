@@ -1,8 +1,5 @@
 html {
-  font-size: 37px; }
-  @media (min-width: 1024px) {
-    html {
-      font-size: 15px; } }
+  font-size: 15px; }
 
 body {
   -webkit-font-smoothing: antialiased;
@@ -12,6 +9,9 @@ body {
   height: 100%;
   padding: 0;
   margin: 0; }
+
+p, li {
+  font-size: 1.2rem; }
 
 .subtitle {
   color: #4c4c4c; }
@@ -47,14 +47,16 @@ body {
   justify-content: space-evenly; }
 
 .l-frame {
-  width: 100%;
+  width: 100vw;
   max-width: 1280px;
   margin: 0 auto;
   box-sizing: content-box;
   background: #fff;
-  padding: 0 16px;
   overflow: hidden;
   position: relative; }
+  @media (min-width: 1024px) {
+    .l-frame {
+      padding: 0 16px; } }
   .l-frame .header {
     left: auto;
     -webkit-box-pack: justify;
@@ -121,6 +123,7 @@ body {
     align-items: center; }
     @media (min-width: 1024px) {
       .l-frame .price_cont {
+        margin-bottom: 70px;
         flex-direction: row;
         justify-content: space-evenly; } }
     .l-frame .price_cont.align-baseline {
@@ -132,10 +135,8 @@ body {
         .l-frame .price_cont .service {
           width: 40%;
           margin-bottom: 0px; } }
-      .l-frame .price_cont .service p {
-        font-size: 1rem; }
-        .l-frame .price_cont .service p .small-mobile {
-          font-size: 0.8rem; }
+      .l-frame .price_cont .service p .small-mobile {
+        font-size: 0.8rem; }
       .l-frame .price_cont .service h2 {
         font-size: 1.4rem; }
         .l-frame .price_cont .service h2 .japaneseTitle {
@@ -158,11 +159,7 @@ body {
           list-style-type: none;
           color: black;
           margin-bottom: 30px;
-          font-size: 0.62rem;
           line-height: 1.5rem; }
-          @media (min-width: 1024px) {
-            .l-frame .price_cont .obs ul li {
-              font-size: 0.9rem; } }
           .l-frame .price_cont .obs ul li:last-child {
             margin-bottom: 0; }
           .l-frame .price_cont .obs ul li .is-red {
@@ -181,18 +178,20 @@ body {
       .l-frame #access .address_cont {
         flex-direction: row;
         width: 100%;
-        justify-content: space-evenly; }
+        justify-content: center; }
         .l-frame #access .address_cont .address {
           margin: 0;
           line-height: 29px;
-          font-size: 1.2rem;
           font-weight: 300; } }
+    @media (min-width: 1024px) and (min-width: 1024px) {
+      .l-frame #access .address_cont .address {
+        margin-right: 80px; } }
     .l-frame #access .address_cont .iframe {
       width: 100%;
       height: 500px; }
       @media (min-width: 1024px) {
         .l-frame #access .address_cont .iframe {
-          width: 60%;
+          width: 30%;
           height: 300px; } }
   .l-frame #schedule {
     padding: 0; }
@@ -217,14 +216,15 @@ body {
           margin: 0; } }
     .l-frame #aboutme .aboutme_cont .infos {
       margin: 0 auto;
-      width: 80%;
-      margin-left: 90px; }
+      width: 80%; }
+      @media (min-width: 1024px) {
+        .l-frame #aboutme .aboutme_cont .infos {
+          margin-left: 90px; } }
       .l-frame #aboutme .aboutme_cont .infos > p {
-        font-size: 0.7rem;
-        line-height: 70px; }
+        line-height: 33px;
+        width: 90%; }
         @media (min-width: 1024px) {
           .l-frame #aboutme .aboutme_cont .infos > p {
-            font-size: 1.1rem;
             line-height: 39.8px; } }
       @media (min-width: 1024px) {
         .l-frame #aboutme .aboutme_cont .infos {
@@ -236,7 +236,7 @@ body {
         display: flex;
         flex-direction: row;
         text-decoration: none;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         color: #6DC02E;
         padding: 0 30px;
@@ -244,20 +244,17 @@ body {
         margin-top: 10px;
         position: relative;
         border-radius: 2px;
-        width: 300px;
         border: 2px #6DC02E solid;
         border-radius: 3px;
-        margin-top: 50px; }
+        margin-top: 50px;
+        width: 50%;
+        margin: 50px  auto 0 auto; }
         @media (min-width: 1024px) {
           .l-frame #aboutme .aboutme_cont .infos .line_btn {
             width: 100px; } }
         .l-frame #aboutme .aboutme_cont .infos .line_btn .line_logo {
-          width: 80px;
-          height: 80px; }
-          @media (min-width: 1024px) {
-            .l-frame #aboutme .aboutme_cont .infos .line_btn .line_logo {
-              width: 30px;
-              height: 30px; } }
+          width: 30px;
+          height: 30px; }
         .l-frame #aboutme .aboutme_cont .infos .line_btn > p {
           font-weight: 600; }
   .l-frame #instagram {
@@ -269,4 +266,7 @@ body {
   .l-frame .footer {
     margin: 0 auto;
     text-align: center;
-    margin: 150px 0 20px 0; }
+    margin: 80px 0 20px 0; }
+    @media (min-width: 1024px) {
+      .l-frame .footer {
+        margin: 150px 0 20px 0; } }
