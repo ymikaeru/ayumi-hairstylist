@@ -1,6 +1,6 @@
 html {
   font-size: 37px; }
-  @media (min-width: 1281px) {
+  @media (min-width: 1024px) {
     html {
       font-size: 15px; } }
 
@@ -67,24 +67,24 @@ body {
     box-sizing: border-box;
     justify-content: center;
     height: 190px; }
-    @media (min-width: 1281px) {
+    @media (min-width: 1024px) {
       .l-frame .header {
         height: 120px;
         justify-content: space-between; } }
-    @media (min-width: 1281px) {
+    @media (min-width: 1024px) {
       .l-frame .header .logo {
         flex: 1; } }
     .l-frame .header .logo img {
       width: 200px; }
-      @media (min-width: 1281px) {
+      @media (min-width: 1024px) {
         .l-frame .header .logo img {
           width: 130px; } }
     .l-frame .header .menu_item {
       display: none; }
-      @media (min-width: 1281px) {
+      @media (min-width: 1024px) {
         .l-frame .header .menu_item {
           display: block;
-          margin-right: 40px; }
+          margin-left: 4vw; }
           .l-frame .header .menu_item a {
             text-decoration: none;
             color: #4c4c4c; }
@@ -110,7 +110,7 @@ body {
   .l-frame #price, .l-frame #access {
     width: 85%;
     margin: 0 auto; }
-    @media (min-width: 1281px) {
+    @media (min-width: 1024px) {
       .l-frame #price, .l-frame #access {
         width: 100%; } }
   .l-frame .price_cont {
@@ -119,14 +119,16 @@ body {
     flex-direction: column;
     margin-top: 0;
     align-items: center; }
-    @media (min-width: 1281px) {
+    @media (min-width: 1024px) {
       .l-frame .price_cont {
         flex-direction: row;
         justify-content: space-evenly; } }
+    .l-frame .price_cont.align-baseline {
+      align-items: baseline; }
     .l-frame .price_cont .service {
       width: 100%;
       margin-bottom: 40px; }
-      @media (min-width: 1281px) {
+      @media (min-width: 1024px) {
         .l-frame .price_cont .service {
           width: 40%;
           margin-bottom: 0px; } }
@@ -144,7 +146,7 @@ body {
       padding: 18px 28px;
       box-sizing: border-box;
       margin-top: 20px; }
-      @media (min-width: 1281px) {
+      @media (min-width: 1024px) {
         .l-frame .price_cont .obs {
           width: 40%;
           margin-top: 0; } }
@@ -155,39 +157,116 @@ body {
           margin-bottom: 10px;
           list-style-type: none;
           color: black;
-          font-size: 0.7rem;
-          margin-bottom: 30px; }
+          margin-bottom: 30px;
+          font-size: 0.62rem;
+          line-height: 1.5rem; }
+          @media (min-width: 1024px) {
+            .l-frame .price_cont .obs ul li {
+              font-size: 0.9rem; } }
           .l-frame .price_cont .obs ul li:last-child {
             margin-bottom: 0; }
           .l-frame .price_cont .obs ul li .is-red {
             color: #AC2424; }
   .l-frame #access .address_cont {
     align-items: flex-start;
-    flex-direction: column; }
-    @media (min-width: 1281px) {
+    flex-direction: column;
+    width: 100%; }
+    .l-frame #access .address_cont .title {
+      font-size: 1.4rem;
+      color: #4c4c4c; }
+    .l-frame #access .address_cont .middle_font {
+      font-size: 0.8rem;
+      font-weight: 400; }
+    @media (min-width: 1024px) {
       .l-frame #access .address_cont {
         flex-direction: row;
         width: 100%;
-        justify-content: space-evenly; } }
+        justify-content: space-evenly; }
+        .l-frame #access .address_cont .address {
+          margin: 0;
+          line-height: 29px;
+          font-size: 1.2rem;
+          font-weight: 300; } }
     .l-frame #access .address_cont .iframe {
       width: 100%;
       height: 500px; }
-      @media (min-width: 1281px) {
+      @media (min-width: 1024px) {
         .l-frame #access .address_cont .iframe {
-          width: 50%;
+          width: 60%;
           height: 300px; } }
   .l-frame #schedule {
     padding: 0; }
-    @media (min-width: 1281px) {
+    @media (min-width: 1024px) {
       .l-frame #schedule {
-        padding: 0 6vw; } }
+        width: 90%;
+        margin: 0 auto; } }
+  .l-frame #aboutme .aboutme_cont {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; }
+    @media (min-width: 1024px) {
+      .l-frame #aboutme .aboutme_cont {
+        flex-direction: row;
+        margin-left: 3vw; } }
+    .l-frame #aboutme .aboutme_cont .profile_pic {
+      width: 90%;
+      margin: 0 auto; }
+      @media (min-width: 1024px) {
+        .l-frame #aboutme .aboutme_cont .profile_pic {
+          width: 29%;
+          margin: 0; } }
+    .l-frame #aboutme .aboutme_cont .infos {
+      margin: 0 auto;
+      width: 80%;
+      margin-left: 90px; }
+      .l-frame #aboutme .aboutme_cont .infos > p {
+        font-size: 0.7rem;
+        line-height: 70px; }
+        @media (min-width: 1024px) {
+          .l-frame #aboutme .aboutme_cont .infos > p {
+            font-size: 1.1rem;
+            line-height: 39.8px; } }
+      @media (min-width: 1024px) {
+        .l-frame #aboutme .aboutme_cont .infos {
+          width: 40%; } }
+      .l-frame #aboutme .aboutme_cont .infos .info {
+        display: flex;
+        flex-direction: row; }
+      .l-frame #aboutme .aboutme_cont .infos .line_btn {
+        display: flex;
+        flex-direction: row;
+        text-decoration: none;
+        justify-content: space-between;
+        align-items: center;
+        color: #6DC02E;
+        padding: 0 30px;
+        background-color: white;
+        margin-top: 10px;
+        position: relative;
+        border-radius: 2px;
+        width: 300px;
+        border: 2px #6DC02E solid;
+        border-radius: 3px;
+        margin-top: 50px; }
+        @media (min-width: 1024px) {
+          .l-frame #aboutme .aboutme_cont .infos .line_btn {
+            width: 100px; } }
+        .l-frame #aboutme .aboutme_cont .infos .line_btn .line_logo {
+          width: 80px;
+          height: 80px; }
+          @media (min-width: 1024px) {
+            .l-frame #aboutme .aboutme_cont .infos .line_btn .line_logo {
+              width: 30px;
+              height: 30px; } }
+        .l-frame #aboutme .aboutme_cont .infos .line_btn > p {
+          font-weight: 600; }
   .l-frame #instagram {
     width: 100%;
     margin: 0 auto; }
-    @media (min-width: 1281px) {
+    @media (min-width: 1024px) {
       .l-frame #instagram {
         width: 90%; } }
   .l-frame .footer {
     margin: 0 auto;
     text-align: center;
-    margin: 100px 0 20px 0; }
+    margin: 150px 0 20px 0; }

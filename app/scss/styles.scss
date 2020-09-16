@@ -1,9 +1,10 @@
 html{
 	font-size: 37px;
-	@media (min-width: 1281px) {
+	@media (min-width: 1024px) {
 		font-size: 15px;
 	}
 }
+
 
 body{
 	-webkit-font-smoothing: antialiased;
@@ -79,27 +80,27 @@ body{
 		justify-content: center;
 		height: 190px;
 
-		@media (min-width: 1281px) {
+		@media (min-width: 1024px) {
 			height: 120px;
 			justify-content: space-between;
 		}
 
 		.logo{
-			@media (min-width: 1281px) {
+			@media (min-width: 1024px) {
 				flex:1;
 			}
 			img{
 				width:200px;
-				@media (min-width: 1281px) {
+				@media (min-width: 1024px) {
 					width:130px;
 				}
 			}
 		}
 		.menu_item{
 			display: none;
-			@media (min-width: 1281px) {
+			@media (min-width: 1024px) {
 				display: block;
-				margin-right: 40px;
+				margin-left: 4vw;
 				a{
 					text-decoration: none;
 					color: #4c4c4c;
@@ -140,7 +141,7 @@ body{
 	#price, #access{
 		width: 85%;
 		margin: 0 auto;
-		@media (min-width: 1281px) {
+		@media (min-width: 1024px) {
 			width: 100%;
 		}
 	}
@@ -150,19 +151,24 @@ body{
 		display: flex;
 		flex-direction: column;
 		margin-top: 0;
-		@media (min-width: 1281px) {
+		@media (min-width: 1024px) {
 			flex-direction: row;
 			justify-content: space-evenly;
 		}
 
 		align-items: center;
 
+		&.align-baseline{
+			align-items: baseline;
+		}
+
+
 
 
 		.service{
 			width: 100%;
 			margin-bottom: 40px;
-			@media (min-width: 1281px) {
+			@media (min-width: 1024px) {
 				width: 40%;
 				margin-bottom: 0px;
 			}
@@ -186,7 +192,7 @@ body{
 			box-sizing: border-box;
 			margin-top: 20px;
 
-			@media (min-width: 1281px) {
+			@media (min-width: 1024px) {
 				width: 40%;
 				margin-top: 0;
 			}
@@ -199,8 +205,12 @@ body{
 					margin-bottom: 10px;
 					list-style-type:none;
 					color:black;
-					font-size: 0.7rem;
 					margin-bottom: 30px;
+			    font-size: 0.62rem;
+					line-height: 1.5rem;
+					@media (min-width: 1024px) {
+						font-size: 0.9rem;
+					}
 
 					&:last-child{
 						margin-bottom: 0;
@@ -217,16 +227,32 @@ body{
 		.address_cont{
 			align-items: flex-start;
 			flex-direction: column;
-			@media (min-width: 1281px) {
+			width: 100%;
+			.title{
+				font-size: 1.4rem;
+				color: #4c4c4c;
+			}
+			.middle_font{
+				font-size: 0.8rem;
+				font-weight: 400;
+			}
+			@media (min-width: 1024px) {
 				flex-direction: row;
 				width: 100%;
 				justify-content: space-evenly;
+				.address{
+					margin: 0;
+					line-height: 29px;
+					font-size: 1.2rem;
+					font-weight: 300;
+				}
 			}
+
 			.iframe{
 				width: 100%;
 				height: 500px;
-				@media (min-width: 1281px) {
-					width: 50%;
+				@media (min-width: 1024px) {
+					width: 60%;
 					height: 300px;
 				}
 
@@ -236,18 +262,93 @@ body{
 
 	#schedule{
     padding: 0;
-		@media (min-width: 1281px) {
-			padding: 0 6vw;
+		@media (min-width: 1024px) {
+			width: 90%;
+    		margin: 0 auto;
 		}
 		.iframe{
 
+		}
+	}
+	#aboutme{
+		.aboutme_cont{
+			display: flex;
+			flex-direction: column;
+			@media (min-width: 1024px) {
+				flex-direction: row;
+				margin-left: 3vw;
+			}
+			// justify-content: center;
+			align-items: flex-start;
+			.profile_pic{
+				width: 90%;
+				margin: 0 auto;
+				@media (min-width: 1024px) {
+					width: 29%;
+					margin: 0;
+				}
+			}
+
+			.infos{
+				margin: 0 auto;
+				width: 80%;
+				margin-left: 90px;
+				> p{
+					font-size: 0.7rem;
+					line-height: 70px;
+					@media (min-width: 1024px) {
+						font-size: 1.1rem;
+    				line-height: 39.8px;
+					}
+				}
+				@media (min-width: 1024px) {
+					width: 40%;
+				}
+				.info{
+					display: flex;
+					flex-direction: row;
+				}
+				.line_btn{
+					display: flex;
+					flex-direction: row;
+					text-decoration: none;
+					justify-content: space-between;
+					align-items: center;
+					color: #6DC02E;
+					padding: 0 30px;
+					background-color: white;
+					margin-top: 10px;
+					position: relative;
+					border-radius: 2px;
+					width: 300px;
+					@media (min-width: 1024px) {
+						width: 100px;
+					}
+					border: 2px #6DC02E solid;
+					border-radius: 3px;
+					margin-top: 50px;
+					.line_logo{
+						width: 80px;
+						height: 80px;
+						@media (min-width: 1024px) {
+							width: 30px;
+							height: 30px;
+
+						}
+
+					}
+					>p{
+						font-weight: 600;
+					}
+				}
+			}
 		}
 	}
 
 	#instagram{
 		width: 100%;
     margin: 0 auto;
-		@media (min-width: 1281px) {
+		@media (min-width: 1024px) {
 			width: 90%;
 		}
 	}
@@ -255,7 +356,7 @@ body{
 	.footer{
 		margin: 0 auto;
 		text-align: center;
-		margin: 100px 0 20px 0;
+		margin: 150px 0 20px 0;
 
 	}
 }
