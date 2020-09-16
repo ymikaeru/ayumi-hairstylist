@@ -1,8 +1,3 @@
-html{
-	font-size: 15px;
-}
-
-
 body{
 	-webkit-font-smoothing: antialiased;
 	font-family: 'Noto Sans JP', sans-serif;
@@ -12,8 +7,70 @@ body{
   padding: 0;
   margin: 0;
 }
-p, li{
-	font-size: 1.2rem;
+p{
+	font-size: 40px;
+	@media (min-width: 1024px) {
+		font-size: 20px;
+	}
+}
+li{
+	font-size: 30px;
+	line-height: 70px;
+	@media (min-width: 1024px) {
+		font-size: 14px;
+		line-height: 35px;
+	}
+}
+
+h1{
+	font-size: 80px;
+	@media (min-width: 1024px) {
+		font-size: 40px;
+	}
+	font-weight: 300;
+}
+
+h2{
+	font-size: 50px;
+	@media (min-width: 1024px) {
+		font-size: 25px;
+	}
+	.japaneseTitle{
+		font-size: 40px;
+		@media (min-width: 1024px) {
+			font-size: 20px;
+		}
+	}
+}
+.line_btn{
+	display: flex;
+	flex-direction: row;
+	text-decoration: none;
+	justify-content: center;
+	align-items: center;
+	color: #6DC02E;
+	background-color: white;
+	margin-top: 10px;
+	position: relative;
+	border-radius: 2px;
+	border: 2px #6DC02E solid;
+	border-radius: 3px;
+	margin-top: 50px;
+	margin-bottom: 30px;
+	width: 100%;
+	.line_logo{
+		width: 60px;
+		height: 60px;
+		margin-right: 40px;
+		@media (min-width: 1024px) {
+			width: 30px;
+			height: 30px;
+			margin-bottom: 0;
+		}
+	}
+	>p{
+		font-weight: 400;
+	}
 }
 
 .subtitle{
@@ -21,7 +78,10 @@ p, li{
 }
 
 .small_font{
-	font-size: 0.8rem;
+	font-size: 25px;
+	@media (min-width: 1024px) {
+		font-size: 13px;
+	}
 	vertical-align: super;
 	color: #AC2424;
 }
@@ -121,10 +181,8 @@ p, li{
 	}
 
 	.big_title{
-		font-size: 3.4rem;
 		margin-top: 100px;
 		margin-bottom: 70px;
-		font-weight: 100;
 		color: #4c4c4c;
 		&.green{
 			color: #87AD2F;
@@ -180,12 +238,6 @@ p, li{
 					font-size: 0.8rem;
 				}
 			}
-			h2{
-				font-size: 1.4rem;
-				.japaneseTitle{
-					font-size: 1.2rem;
-				}
-			}
 		}
 		.obs{
 			width: 100%;
@@ -201,14 +253,12 @@ p, li{
 
 			ul{
 				padding: 0;
-				font-size: 0.9rem;
 
 				li{
 					margin-bottom: 10px;
 					list-style-type:none;
 					color:black;
 					margin-bottom: 30px;
-					line-height: 1.5rem;
 					&:last-child{
 						margin-bottom: 0;
 					}
@@ -229,15 +279,22 @@ p, li{
 				font-size: 1.4rem;
 				color: #4c4c4c;
 			}
+			.telephone{
+				text-decoration: none;
+			}
+
 			.middle_font{
-				font-size: 0.8rem;
-				font-weight: 400;
+		    font-size: 30px;
+				@media (min-width: 1024px) {
+					font-size: 15px;
+				}
 			}
 			@media (min-width: 1024px) {
 				flex-direction: row;
 				width: 100%;
 				justify-content: center;
 				.address{
+			    width: 26%;
 					margin: 0;
 					line-height: 29px;
 					font-weight: 300;
@@ -252,7 +309,7 @@ p, li{
 				height: 500px;
 				@media (min-width: 1024px) {
 					width: 30%;
-					height: 300px;
+					height: 380px;
 				}
 
 			}
@@ -283,7 +340,7 @@ p, li{
 				width: 90%;
 				margin: 0 auto;
 				@media (min-width: 1024px) {
-					width: 29%;
+					width: 35%;
 					margin: 0;
 				}
 			}
@@ -292,12 +349,9 @@ p, li{
 				margin: 0 auto;
 				width: 80%;
 
-				@media (min-width: 1024px) {
-					margin-left: 90px;
-				}
 				> p{
-
-					line-height: 33px;
+					line-height: 100px;
+			    font-weight: 300;
 					width: 90%;
 
 					@media (min-width: 1024px) {
@@ -310,35 +364,6 @@ p, li{
 				.info{
 					display: flex;
 					flex-direction: row;
-				}
-				.line_btn{
-					display: flex;
-					flex-direction: row;
-					text-decoration: none;
-					justify-content: space-around;
-					align-items: center;
-					color: #6DC02E;
-					padding: 0 30px;
-					background-color: white;
-					margin-top: 10px;
-					position: relative;
-					border-radius: 2px;
-					@media (min-width: 1024px) {
-						width: 100px;
-					}
-					border: 2px #6DC02E solid;
-					border-radius: 3px;
-					margin-top: 50px;
-					width: 50%;
-					margin: 50px  auto 0 auto;
-					.line_logo{
-						width: 30px;
-						height: 30px;
-
-					}
-					>p{
-						font-weight: 600;
-					}
 				}
 			}
 		}
@@ -353,6 +378,10 @@ p, li{
 	}
 
 	.footer{
+		font-size: 30px;
+		@media (min-width: 1024px) {
+			font-size: 15px;
+		}
 		margin: 0 auto;
 		text-align: center;
 		margin: 80px 0 20px 0;
