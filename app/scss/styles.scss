@@ -56,7 +56,7 @@ h2{
 	border: 2px #6DC02E solid;
 	border-radius: 3px;
 	margin-top: 50px;
-	margin-bottom: 30px;
+	margin-bottom: 80px;
 	width: 100%;
 	.line_logo{
 		width: 60px;
@@ -281,6 +281,11 @@ h2{
 			}
 			.telephone{
 				text-decoration: none;
+				color: #4c4c4c;
+				font-size: 40px;
+				@media (min-width: 1024px) {
+					font-size: 20px;
+				}
 			}
 
 			.middle_font{
@@ -289,6 +294,8 @@ h2{
 					font-size: 15px;
 				}
 			}
+			.address{width: 100%}
+
 			@media (min-width: 1024px) {
 				flex-direction: row;
 				width: 100%;
