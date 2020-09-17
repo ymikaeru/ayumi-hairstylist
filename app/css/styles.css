@@ -290,7 +290,7 @@ h2 {
             line-height: 39.8px; } }
       @media (min-width: 1024px) {
         .l-frame #aboutme .aboutme_cont .infos {
-          width: 40%; } }
+          width: 50%; } }
       .l-frame #aboutme .aboutme_cont .infos .info {
         display: flex;
         flex-direction: row; }
