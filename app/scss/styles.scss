@@ -49,40 +49,35 @@ h2{
 	text-decoration: none;
 	justify-content: center;
 	align-items: center;
-	color: #6DC02E;
 	background-color: white;
 	margin-top: 10px;
 	position: relative;
 	border-radius: 2px;
 	border: 2px #00b900 solid;
-	background-color: #00b900;
 	border-radius: 3px;
 	margin-top: 68px;
 	width: 100%;
 	border-radius: 10px;
 	@media (min-width: 1024px) {
 		border-radius: 5px;
-		width: 320px;
-	}
-	.line_logo{
-		width: 90px;
-		height: 90px;
-		margin-right: 40px;
-		@media (min-width: 1024px) {
-			width: 50px;
-			height: 50px;
-			margin-bottom: 0;
-			margin-right: 20px;
-		}
+		width: 220px;
 	}
 	.line_btn_txt{
-		font-weight: 600;
-		color:white;
-    letter-spacing: 5px;
+		font-weight: 500;
+		color:#6DC02E;
+    letter-spacing: 2px;
 		font-family: sans-serif;
 		font-size: 32px;
+		transition: all 0.2s ease;
 		@media (min-width: 1024px) {
-			font-size: 15px;
+			font-size: 17px;
+		}
+	}
+	transition: all 0.2s ease;
+	&:hover{
+		background-color:#6DC02E;
+		.line_btn_txt{
+			color:#fff;
 		}
 	}
 }
@@ -187,7 +182,6 @@ h2{
 
 	}
 	.full_image{
-		width: 100%;
 		object-fit: cover;
 		height: 900px;
 	}
@@ -196,20 +190,11 @@ h2{
 		margin-top: 160px;
 		margin-bottom: 70px;
 		color: #4c4c4c;
+    text-align: center;
+		color: #E061B0;
+		text-transform: uppercase;
 		@media (min-width: 1024px) {
 			margin-top: 100px;
-		}
-		&.green{
-			color: #87AD2F;
-		}
-		&.blue{
-			color: #29356A;
-		}
-		&.pink{
-			color:#9F456F;
-		}
-		&.red{
-			color: #AC2424;
 		}
 
 	}
@@ -304,6 +289,8 @@ h2{
 				text-decoration: none;
 				color: #9F456F;
 				font-size: 40px;
+				margin-top: 39px;
+		    display: block;
 				@media (min-width: 1024px) {
 					font-size: 20px;
 				}
@@ -311,6 +298,7 @@ h2{
 
 			.middle_font{
 		    font-size: 30px;
+				margin: 0;
 				@media (min-width: 1024px) {
 					font-size: 15px;
 				}
@@ -327,6 +315,18 @@ h2{
 				}
 			}
 
+			.subway_logo{
+				width: 46px;
+				margin-right: 30px;
+				@media (min-width: 1024px) {
+					width: 26px;
+					padding-top: 12px;
+					margin-right: 15px;
+				}
+				img{
+					width: 100%;
+				}
+			}
 
 			.map{
 				width: 100vw;
@@ -409,6 +409,18 @@ h2{
     margin: 0 auto;
 		@media (min-width: 1024px) {
 			width: 90%;
+		}
+		.instagram_txt{
+			font-weight: 300;
+			font-size: 30px;
+			margin-top: 50px;
+			display: block;
+			margin-left: 40px;
+			@media (min-width: 1024px) {
+				font-size: 15px;
+				margin-top: 20px;
+				margin-left: 0;
+			}
 		}
 	}
 
