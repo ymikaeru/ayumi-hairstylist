@@ -314,6 +314,11 @@ h2 {
       .l-frame #schedule {
         width: 90%;
         margin: 0 auto; } }
+    .l-frame #schedule .calendar_txt {
+      margin-left: 40px; }
+      @media (min-width: 1024px) {
+        .l-frame #schedule .calendar_txt {
+          margin-left: 0; } }
     .l-frame #schedule .calendar_iframe {
       border-width: 0;
       width: 100%;

@@ -392,6 +392,12 @@ h2{
 			width: 90%;
     		margin: 0 auto;
 		}
+		.calendar_txt{
+			margin-left: 40px;
+			@media (min-width: 1024px) {
+				margin-left: 0;
+			}
+		}
 		.calendar_iframe{
 			border-width: 0;
 	    width: 100%;
