@@ -60,8 +60,8 @@ h2 {
       border-radius: 10px;
       width: 259px; } }
   .line_btn .line_logo {
-    height: 80px;
-    margin-left: 10px; }
+    height: 100px;
+    margin-left: 13px; }
     @media (min-width: 1024px) {
       .line_btn .line_logo {
         height: 50px;
@@ -71,7 +71,7 @@ h2 {
     color: #fff;
     letter-spacing: 2px;
     font-family: 'Noto Sans JP', sans-serif;
-    font-size: 40px;
+    font-size: 34px;
     transition: all 0.2s ease;
     margin: 0 auto; }
     @media (min-width: 1024px) {
@@ -251,7 +251,6 @@ h2 {
         .l-frame #access .address_cont .middle_font {
           font-size: 15px; } }
     .l-frame #access .address_cont .address {
-      height: 390px;
       margin: 0 auto;
       width: 80%; }
       @media (min-width: 1024px) {
