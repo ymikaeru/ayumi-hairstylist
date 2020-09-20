@@ -47,35 +47,45 @@ h2{
 	display: flex;
 	flex-direction: row;
 	text-decoration: none;
-	justify-content: center;
 	align-items: center;
 	background-color: white;
 	margin-top: 10px;
 	position: relative;
 	border-radius: 2px;
-	border: 2px #00b900 solid;
 	border-radius: 3px;
 	margin-top: 68px;
-	width: 100%;
-	border-radius: 10px;
+	width: 500px;
+	border-radius: 15px;
+	background-color:#00c300;
 	@media (min-width: 1024px) {
-		border-radius: 5px;
-		width: 220px;
+		border-radius: 10px;
+		width: 259px;
 	}
+	.line_logo{
+		height: 80px;
+		margin-left: 10px;
+		@media (min-width: 1024px) {
+			height: 50px;
+			margin-left: 10px;
+		}
+	}
+
 	.line_btn_txt{
-		font-weight: 500;
-		color:#6DC02E;
+		font-weight: bold;
+		color:#fff;
     letter-spacing: 2px;
-		font-family: sans-serif;
+		font-family: 'Noto Sans JP', sans-serif;
 		font-size: 40px;
 		transition: all 0.2s ease;
+		margin: 0 auto;
+
 		@media (min-width: 1024px) {
 			font-size: 17px;
 		}
 	}
 	transition: all 0.2s ease;
 	&:hover{
-		background-color:#6DC02E;
+		background-color:#00e000;
 		.line_btn_txt{
 			color:#fff;
 		}
@@ -304,6 +314,7 @@ h2{
 				}
 			}
 			.address{
+				height: 390px;
 				margin: 0 auto;
     		width: 80%;
 				@media (min-width: 1024px) {
@@ -334,7 +345,7 @@ h2{
 				margin: 0 0 50px 0;
 				@media (min-width: 1024px) {
 					width: 30%;
-					height: 387px;
+					height: 380px;
 			    margin: 21px 0 0 0;
 				}
 
