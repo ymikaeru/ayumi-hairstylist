@@ -351,11 +351,12 @@ h2 {
             font-size: 24px;
             line-height: 22.8px; } }
       .l-frame #aboutme .aboutme_cont .infos .name_e {
-        font-size: 16px;
+        font-size: 32px;
         margin-bottom: 40px;
         line-height: 0; }
         @media (min-width: 1024px) {
           .l-frame #aboutme .aboutme_cont .infos .name_e {
+            font-size: 16px;
             line-height: 29.8px;
             margin-bottom: 20px; } }
       @media (min-width: 1024px) {

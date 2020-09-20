@@ -438,10 +438,11 @@ h2{
 					}
 				}
 				.name_e{
-					font-size: 16px;
+					font-size: 32px;
 					margin-bottom: 40px;
 					line-height: 0;
 					@media (min-width: 1024px) {
+						font-size: 16px;
 						line-height: 29.8px;
 						margin-bottom: 20px;
 					}
