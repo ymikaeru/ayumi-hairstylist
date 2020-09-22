@@ -303,7 +303,7 @@ h2 {
       width: 100vw;
       height: 1000px;
       margin: 0 0 50px 0;
-      margin-top: 30px; }
+      margin-top: 60px; }
       @media (min-width: 1024px) {
         .l-frame #access .address_cont .map {
           margin-top: 0;
@@ -392,7 +392,7 @@ h2 {
       .l-frame #instagram {
         width: 90%; } }
     .l-frame #instagram iframe {
-      margin-top: 30px; }
+      margin-top: 60px; }
       @media (min-width: 1024px) {
         .l-frame #instagram iframe {
           margin-top: 0; } }
