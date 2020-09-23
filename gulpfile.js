@@ -15,7 +15,7 @@ gulp.task('hello', function() {
   console.log('Hello Zell!');
 })
 
-// Development Tasks 
+// Development Tasks
 // -----------------
 
 // Start browserSync server
@@ -43,10 +43,10 @@ gulp.task('watch', function() {
   gulp.watch('app/js/**/*.js', browserSync.reload);
 })
 
-// Optimization Tasks 
+// Optimization Tasks
 // ------------------
 
-// Optimizing CSS and JavaScript 
+// Optimizing CSS and JavaScript
 gulp.task('useref', function() {
 
   return gulp.src('app/*.html')
@@ -56,7 +56,7 @@ gulp.task('useref', function() {
     .pipe(gulp.dest('docs'));
 });
 
-// Optimizing Images 
+// Optimizing Images
 gulp.task('images', function() {
   return gulp.src('app/images/**/*.+(png|jpg|jpeg|gif|svg)')
     // Caching images that ran through imagemin
@@ -66,13 +66,13 @@ gulp.task('images', function() {
     .pipe(gulp.dest('docs/images'))
 });
 
-// Copying fonts 
+// Copying fonts
 gulp.task('fonts', function() {
   return gulp.src('app/fonts/**/*')
     .pipe(gulp.dest('docs/fonts'))
 })
 
-// Cleaning 
+// Cleaning
 gulp.task('clean', function() {
   return del.sync('docs').then(function(cb) {
     return cache.clearAll(cb);
@@ -81,6 +81,13 @@ gulp.task('clean', function() {
 
 gulp.task('clean:docs', function() {
   return del.sync(['docs/**/*', '!docs/images', '!docs/images/**/*']);
+});
+
+gulp.task('copy', function () {
+    gulp.src('app/settings/CNAME')
+        .pipe(gulp.dest('./docs/'));
+    gulp.src('app/settings/sitemap.xml')
+        .pipe(gulp.dest('./docs/'));
 });
 
 // Build Sequences
@@ -95,6 +102,7 @@ gulp.task('default', function(callback) {
 gulp.task('build', function(callback) {
   runSequence(
     'clean:docs',
+    'copy',
     'sass',
     ['useref', 'images', 'fonts'],
     callback
