@@ -10,6 +10,7 @@ body{
 p{
   color: #4c4c4c;
 	font-size: 17px;
+	line-height: 27px;
 }
 
 h1{
@@ -23,10 +24,9 @@ h2{
 		font-size: 17px;
 	}
 }
-
-.is-gray{
+.station_info_cont{
 	background-color: #f5f4f4;
-	padding: 10px;
+	padding: 13px;
 }
 
 .comment_txt{
@@ -373,16 +373,17 @@ h2{
 				font-size: 20px;
 			}
 
-			.middle_font{
-				font-size: 15px;
+			.station_info{
+				font-size: 13px;
+    		line-height: 19px;
 				margin: 0;
 				&.is-gray{
 					background-color: gray;
 				}
 			}
 			.address{
-				margin-left: 30px;
-    		width: 80%;
+				margin: 20px auto 0 auto;
+    		width: 73%;
 				margin-top: 20px;
 		    line-height: 24px;
 				@media (min-width: 1024px) {
@@ -395,7 +396,7 @@ h2{
 			}
 
 			.subway_logo{
-				margin-right: 20px;
+				margin-right: 10px;
 				width: 23px;
 				padding-top: 7px;
 				img{
@@ -408,7 +409,7 @@ h2{
 		    height: 450px;
 				@media (min-width: 1024px) {
 					width: 30%;
-			    height: 290px;
+			    height: 323px;
 			    margin: 21px 0 0 0;
 				}
 
@@ -427,7 +428,6 @@ h2{
 			margin-top: 0;
 			margin-bottom: 30px;
 			margin-left: 20px;
-			line-height: 25px;
 
 			@media (min-width: 1024px) {
 				margin-left: 0;

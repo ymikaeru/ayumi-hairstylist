@@ -9,7 +9,8 @@ body {
 
 p {
   color: #4c4c4c;
-  font-size: 17px; }
+  font-size: 17px;
+  line-height: 27px; }
 
 h1 {
   font-size: 40px;
@@ -20,9 +21,9 @@ h2 {
   h2 .japaneseTitle {
     font-size: 17px; }
 
-.is-gray {
+.station_info_cont {
   background-color: #f5f4f4;
-  padding: 10px; }
+  padding: 13px; }
 
 .comment_txt {
   font-weight: 300;
@@ -290,14 +291,15 @@ h2 {
       font-weight: 400;
       display: block;
       font-size: 20px; }
-    .l-frame #access .address_cont .middle_font {
-      font-size: 15px;
+    .l-frame #access .address_cont .station_info {
+      font-size: 13px;
+      line-height: 19px;
       margin: 0; }
-      .l-frame #access .address_cont .middle_font.is-gray {
+      .l-frame #access .address_cont .station_info.is-gray {
         background-color: gray; }
     .l-frame #access .address_cont .address {
-      margin-left: 30px;
-      width: 80%;
+      margin: 20px auto 0 auto;
+      width: 73%;
       margin-top: 20px;
       line-height: 24px; }
       @media (min-width: 1024px) {
@@ -308,7 +310,7 @@ h2 {
           font-weight: 300;
           margin-right: 80px; } }
     .l-frame #access .address_cont .subway_logo {
-      margin-right: 20px;
+      margin-right: 10px;
       width: 23px;
       padding-top: 7px; }
       .l-frame #access .address_cont .subway_logo img {
@@ -319,7 +321,7 @@ h2 {
       @media (min-width: 1024px) {
         .l-frame #access .address_cont .map {
           width: 30%;
-          height: 290px;
+          height: 323px;
           margin: 21px 0 0 0; } }
   .l-frame #schedule {
     padding: 0; }
@@ -330,8 +332,7 @@ h2 {
     .l-frame #schedule .calendar_txt {
       margin-top: 0;
       margin-bottom: 30px;
-      margin-left: 20px;
-      line-height: 25px; }
+      margin-left: 20px; }
       @media (min-width: 1024px) {
         .l-frame #schedule .calendar_txt {
           margin-left: 0; } }
