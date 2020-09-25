@@ -39,8 +39,8 @@ h2 {
   color: #4c4c4c;
   width: 83%; }
   .comment_txt .is-red {
-    color: #00c300;
-    font-weight: 400;
+    color: #4c4c4c;
+    font-weight: 300;
     display: inline-block;
     border-bottom: 1px #AC2424 solid;
     line-height: 1.2; }
