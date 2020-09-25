@@ -41,8 +41,14 @@ h2{
 	line-height: 29px;
 	padding: 0 2px;
 	color: #4c4c4c;
-
   width: 83%;
+	.is-red{
+		color:#00c300;
+		font-weight: 400;
+		display: inline-block;
+		border-bottom: 1px #AC2424 solid;
+    line-height: 1.2;
+	}
 	@media (min-width: 1024px) {
 		margin-left: 0;
 	}

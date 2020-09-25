@@ -38,6 +38,12 @@ h2 {
   padding: 0 2px;
   color: #4c4c4c;
   width: 83%; }
+  .comment_txt .is-red {
+    color: #00c300;
+    font-weight: 400;
+    display: inline-block;
+    border-bottom: 1px #AC2424 solid;
+    line-height: 1.2; }
   @media (min-width: 1024px) {
     .comment_txt {
       margin-left: 0; } }
