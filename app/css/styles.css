@@ -9,7 +9,7 @@ body {
 
 p {
   color: #4c4c4c;
-  font-size: 17px;
+  font-size: 15px;
   line-height: 27px; }
 
 h1 {
@@ -23,16 +23,21 @@ h2 {
 
 .station_info_cont {
   background-color: #f5f4f4;
-  padding: 13px; }
+  padding: 13px;
+  font-weight: 400;
+  color: #c4c4c4; }
 
 .comment_txt {
   font-weight: 300;
   display: block;
   margin-left: 20px;
   font-family: sans-serif;
-  font-size: 14px;
-  margin-top: 20px;
-  width: 90%; }
+  font-size: 17px;
+  margin-top: 33px;
+  line-height: 29px;
+  padding: 0 2px;
+  color: #4c4c4c;
+  width: 83%; }
   @media (min-width: 1024px) {
     .comment_txt {
       margin-left: 0; } }
@@ -89,7 +94,8 @@ h2 {
 .small_font {
   font-size: 13px;
   vertical-align: super;
-  color: #AC2424; }
+  color: #AC2424;
+  font-weight: 300; }
 
 .has-line {
   border-bottom: 1px dashed #d3d3d3; }
@@ -260,15 +266,15 @@ h2 {
         .l-frame .price_cont .obs {
           width: 40%; } }
       .l-frame .price_cont .obs ul {
-        padding: 20px 30px; }
+        padding: 0 30px; }
         .l-frame .price_cont .obs ul li {
           font-weight: 300;
           color: #4c4c4c;
-          font-size: 16px;
+          font-size: 13px;
           line-height: 27px;
           margin-bottom: 10px;
           list-style-type: none;
-          color: black; }
+          font-weight: 400; }
           .l-frame .price_cont .obs ul li:last-child {
             margin-bottom: 0; }
           .l-frame .price_cont .obs ul li .is-red {
@@ -333,12 +339,31 @@ h2 {
       margin-top: 0;
       margin-bottom: 30px;
       margin-left: 20px; }
+      .l-frame #schedule .calendar_txt.info {
+        display: block;
+        background-color: #F4F4F4;
+        padding: 10px 20px;
+        display: block;
+        box-sizing: border-box;
+        width: 230px;
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 400; }
+      .l-frame #schedule .calendar_txt .is-red {
+        display: block;
+        color: #AC2424;
+        font-weight: 400;
+        margin-bottom: 3px; }
       @media (min-width: 1024px) {
         .l-frame #schedule .calendar_txt {
           margin-left: 0; } }
     .l-frame #schedule .calendar_iframe {
-      border-width: 0;
-      width: 100%; }
+      width: 102%;
+      margin-left: -4px; }
+      @media (min-width: 1024px) {
+        .l-frame #schedule .calendar_iframe {
+          border-width: 0;
+          width: 100%; } }
   .l-frame #instagram {
     width: 100%;
     margin: 0 auto; }
