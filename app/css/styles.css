@@ -365,7 +365,8 @@ h2 {
           margin-left: 0; } }
     .l-frame #schedule .calendar_iframe {
       width: 102%;
-      margin-left: -4px; }
+      margin-left: -4px;
+      height: 50vh; }
       @media (min-width: 1024px) {
         .l-frame #schedule .calendar_iframe {
           border-width: 0;
