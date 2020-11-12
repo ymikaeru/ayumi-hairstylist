@@ -6,6 +6,8 @@ body{
 	height: 100%;
   padding: 0;
   margin: 0;
+	width: 100vw;
+	overflow-x: hidden;
 }
 p{
   color: #4c4c4c;
@@ -209,8 +211,9 @@ h2{
 	.full_image{
 		object-fit: cover;
 		height: 350px;
-		@media (min-width: 1024px) {
-			height: 900px;
+		@media (min-width: 528px) {
+			height: calc(100vh - 93px);
+			width: 100vw;
 		}
 	}
 
@@ -436,31 +439,37 @@ h2{
 			width: 90%;
     	margin: 0 auto;
 		}
+		.calendar_info_cont{
+			display: flex;
+			align-items: flex-end;
+			.calendar_txt{
+				margin-top: 0;
+				margin-bottom: 30px;
+				margin-left: 20px;
+				margin-right:10px;
+				padding-right: 10px;
+				font-size:13px;
+				&.info{
+					display: block;
+					background-color: #F4F4F4;
+					padding: 10px 20px;
+					display: block;
+					box-sizing: border-box;
+					width: 230px;
+					font-size: 14px;
+					line-height: 24px;
+					font-weight: 400;
+				}
+				.is-red{
+					display: block;
+					color:#AC2424;
+					font-weight: 400;
+					margin-bottom: 3px;
+				}
 
-		.calendar_txt{
-			margin-top: 0;
-			margin-bottom: 30px;
-			margin-left: 20px;
-			&.info{
-				display: block;
-				background-color: #F4F4F4;
-		    padding: 10px 20px;
-		    display: block;
-		    box-sizing: border-box;
-    		width: 230px;
-		    font-size: 14px;
-		    line-height: 24px;
-				font-weight: 400;
-			}
-			.is-red{
-				display: block;
-				color:#AC2424;
-				font-weight: 400;
-				margin-bottom: 3px;
-			}
-
-			@media (min-width: 1024px) {
-				margin-left: 0;
+				@media (min-width: 1024px) {
+					margin-left: 0;
+				}
 			}
 		}
 		.calendar_iframe{
