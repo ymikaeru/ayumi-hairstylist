@@ -40,7 +40,7 @@ h2 {
 .obs {
   width: 100%;
   box-sizing: border-box;
-  font-size: 10px;
+  font-size: 9px;
   margin-top: 20px;
   color: #4C4C4C;
   padding-left: 1vw;
@@ -322,15 +322,14 @@ h2 {
         font-size: 15px;
         font-weight: 500; }
       .l-frame #access .address_cont .station_info {
-        line-height: 19px;
+        line-height: 21px;
         margin: 0;
         font-weight: 500; }
       .l-frame #access .address_cont .address {
         margin: 0 auto 40px auto;
-        width: 88%;
         font-weight: 500; }
         .l-frame #access .address_cont .address .address_txt {
-          line-height: 20px;
+          line-height: 21px;
           margin: 0 0 10px 0; }
         @media (min-width: 1024px) {
           .l-frame #access .address_cont .address {
