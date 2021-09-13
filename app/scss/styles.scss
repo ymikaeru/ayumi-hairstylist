@@ -10,7 +10,7 @@ body{
 	overflow-x: hidden;
 }
 p{
-  color: #4c4c4c;
+  color: #000;
 	font-size: 15px;
 	line-height: 27px;
 }
@@ -26,8 +26,71 @@ h2{
 		font-size: 17px;
 	}
 }
+.insta_cont{
+	height: 22px;
+}
+.insta_logo{
+	width: 24px;
+	@media (min-width: 1024px) {
+		width: 20px;
+	}
+
+	margin-left: 4vw;
+	// margin-left: 43px;
+	transition: all 0.5s ease;
+	fill:#000;
+	&:hover{
+		svg{
+			fill:#4C4C4C;
+		}
+	}
+}
+
+.obs{
+	width: 100%;
+	// background-color: #f3f3f3;
+	box-sizing: border-box;
+	font-size: 10px;
+	margin-top: 20px;
+	color: #4C4C4C;
+	padding-left: 1vw;
+	@media (min-width: 1024px) {
+		padding-left: 6vw;
+	}
+
+
+	ul{
+		padding: 0 30px;
+
+		li{
+			font-weight: 300;
+			color: #4c4c4c;
+			font-size: 13px;
+			line-height: 27px;
+			margin-bottom: 10px;
+			list-style-type:none;
+			font-weight: 400;
+			&:last-child{
+				margin-bottom: 0;
+			}
+			.is-red{
+				color: #AC2424;
+			}
+
+		}
+	}
+}
+
+.reservation_btn{
+	color: #fff;
+	text-decoration:none;
+	background-color: #212121;
+	padding: 10px 40px;
+	border-radius: 10px;
+}
+
 .station_info_cont{
-	background-color: #f5f4f4;
+
 	padding: 13px;
 	font-weight: 400;
 	color: #c4c4c4;
@@ -56,56 +119,28 @@ h2{
 	}
 }
 
+.line_msg{
+	font-size: 12px;
+	margin-top: 13px;
+}
+
 .icons_cont{
 	display: flex;
 	flex-direction: row;
-  align-items: baseline;
-	margin-top: 63px;
-  justify-content: space-between;
+	margin-top: 73px;
+  justify-content: flex-start;
 	@media (min-width: 1024px) {
 		margin-top: 33px;
 		justify-content: flex-start;
 	}
-	.insta_logo{
-		width: 38px;
-		margin-left: 43px;
-		transition: all 0.5s ease;
-		&:hover{
-			filter:saturate(1.3);
-		}
-	}
-	.line_btn{
-		display: flex;
-		flex-direction: row;
-		text-decoration: none;
-		align-items: center;
-		background-color: white;
-		position: relative;
-		border-radius: 2px;
-		border-radius: 3px;
-		background-color:#00c300;
-		border-radius: 10px;
-    width: 249px;
-		.line_logo{
-			height: 40px;
-			margin-left: 10px;
-		}
+	.line_btn_cont{
+		width: 46px;
+		height:46px;
+		margin-left: 40px;
 
-		.line_btn_txt{
-			font-weight: bold;
-			color:#fff;
-			letter-spacing: 2px;
-			font-family: 'Noto Sans JP', sans-serif;
-			transition: all 0.2s ease;
-			margin: 0 auto;
-			font-size: 14px;
-		}
-		transition: all 0.2s ease;
-		&:hover{
-			background-color:#00e000;
-			.line_btn_txt{
-				color:#fff;
-			}
+		.line_btn{
+			width: 100%;
+			height:100%;
 		}
 	}
 }
@@ -113,6 +148,7 @@ h2{
 .subtitle{
 	color:#4c4c4c;
   margin-top: 0;
+	font-weight: normal;
 }
 
 .small_font{
@@ -169,10 +205,10 @@ h2{
     padding: 34px 6vw;
 		display: flex;
 		align-items: center;
-		padding: 0 4vw;
+		padding: 0 9vw;
 		font-size: 18px;
 		box-sizing: border-box;
-		justify-content: center;
+		justify-content: space-between;
 		height: 80px;
 
 		@media (min-width: 1024px) {
@@ -198,9 +234,9 @@ h2{
 				margin-left: 4vw;
 				a{
 					text-decoration: none;
-					color: #4c4c4c;
+					color: black;
 					&:hover{
-						color: black;
+						color: #4c4c4c;
 					}
 				}
 			}
@@ -218,13 +254,14 @@ h2{
 	}
 
 	.big_title{
-    margin: 60px 0 40px 0;
+    margin: 30px 0 40px 0;
 		color: #4c4c4c;
     text-align: center;
-		color: #E061B0;
+		color: #000000;
 		text-transform: uppercase;
+		font-weight: lighter;
 		@media (min-width: 1024px) {
-			margin-top: 100px;
+			margin-top: 50px;
 		}
 
 	}
@@ -233,18 +270,21 @@ h2{
 		.aboutme_cont{
 			display: flex;
 			flex-direction: column;
+			padding: 100px 0;
+			padding: 10px 0;
 			@media (min-width: 1024px) {
+				padding: 40px 0 100px;
 				flex-direction: row;
-				margin-left: 3vw;
+				padding-left: 3vw;
 			}
 			// justify-content: center;
 			align-items: flex-start;
 			.profile_pic{
-				width: 180px;
-				height: 180px;
+				width: 419px;
+				height: 290px;
 				margin: 0 auto;
-				border-radius: 580px;
 				object-fit: cover;
+				filter: saturate(0.8) contrast(1.15);
 
 				@media (min-width: 1024px) {
 					width: 35%;
@@ -261,7 +301,7 @@ h2{
 				.name_j{
 					font-size: 24px;
 					font-weight: 400;
-					color: #4c4c4c;
+					color: #000;
 					margin-bottom: 0;
 				}
 				.name_e{
@@ -277,13 +317,14 @@ h2{
 					margin-top: 0;
 				}
 				> p{
-					line-height: 35px;
+					line-height: 29px;
 			    font-weight: 300;
+					font-weight: normal;
 
 					@media (min-width: 1024px) {
 						margin: 0;
 						width: 90%;
-    				line-height: 39.8px;
+    				line-height: 26.8px;
 					}
 				}
 				.info{
@@ -295,8 +336,10 @@ h2{
 	}
 
 	#price, #access{
+		margin-top: 50px;
 		width: 85%;
 		margin: 0 auto;
+		padding-bottom: 20px;
 		@media (min-width: 1024px) {
 			width: 100%;
 		}
@@ -307,8 +350,14 @@ h2{
 		display: flex;
 		flex-direction: column;
 		margin-top: 0;
+		&.last-row{
+			margin-top: 0px;
+			@media (min-width: 1024px) {
+				margin-top: 100px;
+			}
+		}
+
 		@media (min-width: 1024px) {
-			margin-bottom: 70px;
 			flex-direction: row;
 			justify-content: space-evenly;
 		}
@@ -325,6 +374,9 @@ h2{
 		.service{
 			width: 100%;
 			margin-bottom: 40px;
+			&.is-last{
+				margin-bottom: 10px;
+			}
 			@media (min-width: 1024px) {
 				width: 40%;
 				margin-bottom: 0px;
@@ -332,36 +384,6 @@ h2{
 			p{
 				.small-mobile{
 					font-size: 0.8rem;
-				}
-			}
-		}
-		.obs{
-			width: 100%;
-			background-color: #f3f3f3;
-			box-sizing: border-box;
-
-			@media (min-width: 1024px) {
-				width: 40%;
-			}
-
-			ul{
-				padding: 0 30px;
-
-				li{
-					font-weight: 300;
-				  color: #4c4c4c;
-					font-size: 13px;
-					line-height: 27px;
-					margin-bottom: 10px;
-					list-style-type:none;
-			    font-weight: 400;
-					&:last-child{
-						margin-bottom: 0;
-					}
-					.is-red{
-						color: #AC2424;
-					}
-
 				}
 			}
 		}
@@ -379,34 +401,29 @@ h2{
 
 			.title{
 				font-size: 1.4rem;
-				color: #4c4c4c;
+				color: #000;
 			}
 			.telephone{
 				text-decoration: none;
-				color: #E061B0;
-				margin-top: 19px;
+				color: #4C4C4C;
 				font-weight: 400;
 		    display: block;
-				font-size: 20px;
+				font-size: 15px;
+				font-weight:500;
 			}
 
 			.station_info{
-				font-size: 13px;
     		line-height: 19px;
 				margin: 0;
-				&.is-gray{
-					background-color: gray;
-				}
+				font-weight:500;
 			}
 			.address{
 				margin: 40px auto 0 auto;
     		width: 73%;
-		    line-height: 24px;
+				font-weight:500;
 				@media (min-width: 1024px) {
 					width: 26%;
 					margin: 0;
-					line-height: 29px;
-					font-weight: 300;
 					margin-right: 80px;
 				}
 			}
@@ -435,9 +452,26 @@ h2{
 
 	#schedule{
     padding: 0;
+		background-color: #F2F2F2;
+		padding-top: 10px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		display: none;
 		@media (min-width: 1024px) {
-			width: 90%;
     	margin: 0 auto;
+			display: block;
+		}
+		.aircalendar{
+			width: 90%;
+			height: 1000px;
+
+			@media (min-width: 1024px) {
+				width: 100%;
+				height: 1250px;
+
+			}
+
 		}
 		.calendar_info_cont{
 			display: flex;
@@ -497,7 +531,7 @@ h2{
 		font-size: 15px;
 		margin: 0 auto;
 		text-align: center;
-    margin: 80px 0 30px 0;
+    margin: 30px 0 30px 0;
 		@media (min-width: 1024px) {
 	    margin: 80px 0 30px 0;
 		}
