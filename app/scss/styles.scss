@@ -120,9 +120,14 @@ h2{
 	}
 }
 
-.line_msg{
+.header_msg{
 	font-size: 12px;
 	margin-top: 13px;
+		&.red_small{
+			color:#810f0f;
+			font-size: 10px;
+		}
+
 }
 
 .icons_cont{
