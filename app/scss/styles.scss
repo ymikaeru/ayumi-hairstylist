@@ -9,6 +9,16 @@ body{
 	width: 100vw;
 	overflow-x: hidden;
 }
+span{
+	&.lineBreak{
+		display: inline;
+		@media (min-width: 1024px) {
+			display: none;
+		}
+	}	
+
+}
+
 p{
   color: #000;
 	font-size: 15px;
